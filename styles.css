@@ -1,0 +1,165 @@
+/* ========== RESET STYLES ========== */
+/* Remove default margins and padding from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY STYLES ========== */
+/* Main page styling - light blue background with flexbox centering */
+body {
+  font-family: 'Outfit', sans-serif;
+  /* Slate 300 - light blue background color from style guide */
+  background-color: hsl(212, 45%, 89%);
+  /* Flexbox layout for vertical centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Minimum height of viewport to center content */
+  min-height: 100vh;
+  /* Padding for mobile devices */
+  padding: 20px;
+}
+
+/* ========== MAIN CONTAINER ========== */
+/* Main element wraps the card content */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Takes up available space */
+}
+
+/* ========== CARD STYLES ========== */
+/* White card container with rounded corners and shadow */
+.card {
+  /* White background - from style guide */
+  background-color: hsl(0, 0%, 100%);
+  /* Rounded corners for modern look */
+  border-radius: 20px;
+  /* Internal spacing inside the card */
+  padding: 16px;
+  /* Maximum width for desktop, 320px is ideal for this component */
+  max-width: 320px;
+  /* Full width on mobile devices */
+  width: 100%;
+  /* Subtle shadow for depth effect */
+  box-shadow: 0 20px 67px rgba(33, 63, 106, 0.15);
+}
+
+/* ========== FIGURE STYLES ========== */
+/* Figure is a semantic element for self-contained content */
+figure {
+  /* Remove default margin from figure */
+  margin: 0;
+  /* Center align text inside figure */
+  text-align: center;
+}
+
+/* ========== QR CODE IMAGE ========== */
+/* Image inside figure - the QR code */
+figure img {
+  /* Full width relative to card */
+  width: 100%;
+  /* Auto height maintains aspect ratio */
+  height: auto;
+  /* Slight rounded corners for the image */
+  border-radius: 10px;
+  /* Display as block to remove inline spacing */
+  display: block;
+  /* Space between image and text below */
+  margin-bottom: 24px;
+}
+
+/* ========== FIGCAPTION STYLES ========== */
+/* Caption container for heading and paragraph */
+figcaption {
+  /* Padding for breathing room inside caption */
+  padding: 0 8px;
+}
+
+/* ========== HEADING STYLES ========== */
+/* H2 heading inside figcaption */
+figcaption h2 {
+  /* Font size - slightly larger, readable heading */
+  font-size: 22px;
+  /* Font weight 700 - bold from style guide */
+  font-weight: 700;
+  /* Slate 900 - dark color from style guide */
+  color: hsl(218, 44%, 22%);
+  /* Line height for readability */
+  line-height: 1.3;
+  /* Space between heading and paragraph */
+  margin-bottom: 16px;
+  /* Slight negative letter spacing for compact look */
+  letter-spacing: -0.5px;
+}
+
+/* ========== PARAGRAPH STYLES ========== */
+/* Paragraph text inside figcaption */
+figcaption p {
+  /* Font size 15px from style guide */
+  font-size: 15px;
+  /* Font weight 400 - regular from style guide */
+  font-weight: 400;
+  /* Slate 500 - gray color for secondary text */
+  color: hsl(216, 15%, 48%);
+  /* Line height for better readability of multi-line text */
+  line-height: 1.6;
+  /* Slight letter spacing for clarity */
+  letter-spacing: 0.2px;
+}
+
+/* ========== FOOTER STYLES ========== */
+/* Attribution footer styling */
+.attribution {
+  /* Small font size for footer text */
+  font-size: 11px;
+  /* Center align footer content */
+  text-align: center;
+  /* Space from card above */
+  margin-top: 40px;
+  /* Slate 500 - gray color for secondary text */
+  color: hsl(216, 15%, 48%);
+}
+
+/* ========== FOOTER LINKS ========== */
+/* Links inside footer */
+.attribution a {
+  /* Blue color for links */
+  color: hsl(228, 45%, 44%);
+  /* Remove default underline */
+  text-decoration: none;
+  /* Smooth transition for hover effect */
+  transition: opacity 0.3s ease;
+}
+
+/* ========== FOOTER LINK HOVER STATE ========== */
+/* Interactive hover effect for links */
+.attribution a:hover {
+  /* Slight transparency on hover */
+  opacity: 0.7;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+/* Media query for smaller screens - tablet and below */
+@media (max-width: 640px) {
+  /* Adjust card padding for smaller screens */
+  .card {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  /* Slightly smaller heading on mobile */
+  figcaption h2 {
+    font-size: 20px;
+  }
+
+  /* Slightly smaller paragraph on mobile */
+  figcaption p {
+    font-size: 14px;
+  }
+}
